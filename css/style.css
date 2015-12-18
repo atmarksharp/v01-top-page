@@ -1,14 +1,24 @@
+@font-face {
+  font-family: 'digit';
+  src: url('../font/DSDIGI.ttf') format('truetype');
+  src: url('../font/DSDIGI.eot') format('embedded-opentype');
+  src: url('../font/DSDIGI.woff') format('woff');
+}
+
 body {
-  background: url('../img/footer_lodyas.png') repeat;
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
-  color: #eeeeee;
+  color: #ffc0c0;
 }
 
 a:visited {
-  color: #c0ffc0;
+  color: #c0eec0;
 }
 
 a:hover {
@@ -17,8 +27,36 @@ a:hover {
 
 #contents {
   margin: 1em;
+  padding: 1em;
+  width: 300px;
+  border-radius: 10px;
 }
 
 #logo {
-  max-width: 300px;
+  max-width: 170px;
+}
+
+.dark-back {
+  background: url('../img/footer_lodyas.png') repeat;
+}
+
+.bright-back {
+  /*background: url('../img/congruent_pentagon.png') repeat;*/
+  background: url('../img/original-pentagon-011.png') repeat;
+}
+
+.white-color {
+  color: white;
+}
+
+.black-color {
+  color: black;
+}
+
+.digit {
+  font-family: 'digit';
+}
+
+span.small {
+  font-size: 0.9em;
 }
