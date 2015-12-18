@@ -25,24 +25,46 @@ a:hover {
   color: #b0b0ff;
 }
 
+#back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
 #contents {
-  margin: 1em;
+  position: absolute;
+  margin: 0;
   padding: 1em;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
+  /*border-right: 4px #909090 solid;*/
+  /*border-bottom: 4px #909090 solid;*/
 }
 
 #logo {
   max-width: 170px;
+  border: 4px #707070 solid;
+}
+
+.dark-back-70 {
+  background: url('../img/footer_lodyas-a70.png') repeat;
 }
 
 .dark-back {
-  background: url('../img/footer_lodyas.png') repeat;
+  background: #303030;
 }
 
 .bright-back {
   /*background: url('../img/congruent_pentagon.png') repeat;*/
   background: url('../img/original-pentagon-011.png') repeat;
+}
+
+.photo-back {
+  /*background-image: url('../img/notepad-926025_1080.jpg') !important;*/
+  /*background-repeat: no-repeat;*/
+  /*background-color: #393130;*/
+  background: url('../img/notepad-926025_1280.jpg') no-repeat;
+  background-size: 100%;
 }
 
 .white-color {
@@ -59,4 +81,35 @@ a:hover {
 
 span.small {
   font-size: 0.9em;
+}
+
+/*568px*/
+@media only screen
+	and (max-width:560px) {
+
+  .photo-back {
+    background: url('../img/notepad-926025_1280-rotate.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  .dark-back-70 {
+    background: url('../img/footer_lodyas-a30.png') repeat;
+  }
+
+}
+
+/*568px*/
+@media only screen
+	and (max-width:560px)
+  and (orientation:landscape){
+
+  .photo-back {
+    background: url('../img/notepad-926025_1280.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  .dark-back-70 {
+    background: url('../img/footer_lodyas-a30.png') repeat;
+  }
+
 }
