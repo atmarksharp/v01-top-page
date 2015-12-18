@@ -1,0 +1,24 @@
+body {
+  background: url('../img/footer_lodyas.png') repeat;
+  color: white;
+}
+
+a:link {
+  color: #eeeeee;
+}
+
+a:visited {
+  color: #c0ffc0;
+}
+
+a:hover {
+  color: #b0b0ff;
+}
+
+#contents {
+  margin: 1em;
+}
+
+#logo {
+  max-width: 300px;
+}
